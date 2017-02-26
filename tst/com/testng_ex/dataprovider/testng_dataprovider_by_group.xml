@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="test-parameter">
+
+    <test name="example1">
+
+        <groups>
+            <run>
+                <!--<include name="groupA" />-->
+                <include name="groupB" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.testng_ex.dataprovider.DataProviderByITestContext" />
+        </classes>
+
+    </test>
+
+</suite>

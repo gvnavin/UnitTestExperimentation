@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+
+    <test name="all">
+        <packages>
+            <package name="com.testng_ex.suite.*" />
+        </packages>
+    </test>
+
+</suite>
+
+        <!--
+
+        testBeforeSuite()
+
+        testBeforeTest()
+        testFindOrder
+        testMakeEmptyOrder
+        testMakeOrder
+        testUpdateOrder
+        testAfterTest()
+
+        testBeforeTest()
+        testConnectMongoDB
+        testConnectMsSQL
+        testConnectMySQL
+        testConnectOracle()
+        testAfterTest()
+        
+        testAfterSuite()
+
+        -->

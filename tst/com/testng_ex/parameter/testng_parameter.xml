@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="test-parameter">
+
+    <test name="example1">
+
+        <parameter name="dbconfig" value="db.properties" />
+        <parameter name="poolsize" value="10" />
+
+        <classes>
+            <class name="com.testng_ex.parameter.TestParameterXML" />
+        </classes>
+
+    </test>
+
+</suite>

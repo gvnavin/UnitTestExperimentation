@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+
+    <test name="final">
+        <classes>
+            <class name="com.testng_ex.group.TestGroupOnMethod"/>
+            <class name="com.testng_ex.group.TestSeleniumGroupOnClass"/>
+        </classes>
+    </test>
+
+</suite>
+
+        <!--
+
+                runSelenium()
+                runSelenium1()
+                setupDB()
+                testConnectMsSQL
+                testConnectOracle()
+                test selenium and database group
+                cleanDB()
+                runSelenium()
+                runSelenium1()
+                runFinal
+
+        -->

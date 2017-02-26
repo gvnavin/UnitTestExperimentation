@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+
+    <test name="order">
+        <classes>
+            <class name="com.testng_ex.suite.TestConfig"/>
+            <class name="com.testng_ex.suite.TestOrder">
+                <methods>
+                    <include name="testMakeOrder"/>
+                    <exclude name="testUpdateOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
+
+        <!--
+
+testBeforeSuite()
+testBeforeTest()
+testMakeOrder
+testAfterTest()
+testAfterSuite()
+
+        -->
