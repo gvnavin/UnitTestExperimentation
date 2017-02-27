@@ -1,14 +1,11 @@
 package com.powermock_easymock;
 
 import com.test.powermock.ClassWithFinalMethod;
-import com.test.powermock.ClassWithPrivateMethod;
 import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mockito;
 import org.powermock.api.easymock.PowerMock;
-import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 

@@ -1,7 +1,6 @@
 package com.easymock_ex;
 
 import com.Util;
-import com.mockito_ex.MockitoTest;
 import com.test.mockito.ArticleDatabase;
 import com.test.mockito.ArticleManager;
 import com.test.mockito.User;
