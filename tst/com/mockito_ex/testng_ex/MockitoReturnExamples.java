@@ -1,13 +1,9 @@
 package com.mockito_ex.testng_ex;
 
 import com.mockito_ex.MockitoTest;
-import org.mockito.ArgumentCaptor;
-import org.mockito.Captor;
-import org.mockito.MockitoAnnotations;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.util.List;
 
 /**
  * Created by gnavin on 2/24/17.
@@ -16,7 +12,7 @@ import java.util.List;
  * Mockito is better
  * http://stackoverflow.com/questions/2864796/easymock-vs-mockito-design-vs-maintainability
  */
-public class MockitoTestExamples {
+public class MockitoReturnExamples {
 
     @Test
     public void testWhenReturn() {
@@ -24,10 +20,9 @@ public class MockitoTestExamples {
     }
 
     @Test
-    public void testMoreThanOneReturnValue() {
-        MockitoTest.testMoreThanOneReturnValue();
+    public void testMoreThanOneTimeReturnValue() {
+        MockitoTest.testMoreThanOneTimeReturnValue();
     }
-
 
     // this test demonstrates how to return values based on the input
     @Test
@@ -55,55 +50,6 @@ public class MockitoTestExamples {
     @Test
     public void testForDoReturn() {
         MockitoTest.testForDoReturn();
-    }
-
-    @Test
-    public void testVerifyOneCall() {
-        MockitoTest.testVerifyOneCall();
-    }
-
-    @Test
-    public void testVerifyOneCallWithMethodParameter() {
-        MockitoTest.testVerifyOneCallWithMethodParameter();
-    }
-
-    @Test
-    public void testVerifyTimes() {
-        MockitoTest.testVerifyTimes();
-    }
-
-    @Test
-    public void testVerifyNever() {
-        MockitoTest.testVerifyNever();
-    }
-
-    @Test
-    public void testVerifyAtleastOnce() {
-        MockitoTest.testVerifyAtleastOnce();
-    }
-
-    @Test
-    public void testVerifyAtleastTimes() {
-        MockitoTest.testVerifyAtleastTimes();
-    }
-
-    @Test
-    public void testVerifyAtmost() {
-        MockitoTest.testVerifyAtmost();
-    }
-
-    @Test
-    public void testSpy() {
-        MockitoTest.testSpy();
-    }
-
-    @Captor
-    private ArgumentCaptor<List<String>> captor;
-
-    @Test
-    public void testArgumentCapture() {
-        MockitoAnnotations.initMocks(this);
-        MockitoTest.testArgumentCapture(captor);
     }
 
 }

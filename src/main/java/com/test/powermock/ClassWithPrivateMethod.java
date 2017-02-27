@@ -9,9 +9,12 @@ public final class ClassWithPrivateMethod {
         return "privateMethod";
     }
 
-
     public String method1() {
         return privateMethod();
+    }
+
+    public String method2() {
+        return method1();
     }
 
 }

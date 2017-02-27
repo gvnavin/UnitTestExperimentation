@@ -17,7 +17,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 public class PrivateMethodExamples {
 
     @Test
-    public void testPrivateMethod() throws Exception {
+    public void testPrivateMethodViaPublicMethod() throws Exception {
 
         final ClassWithPrivateMethod mockedClassWithPrivateMethod = PowerMock.createPartialMock(ClassWithPrivateMethod.class, "privateMethod");
 

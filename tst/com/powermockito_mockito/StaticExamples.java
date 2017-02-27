@@ -9,7 +9,6 @@ import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyString;
 
 /**
@@ -51,7 +50,7 @@ public class StaticExamples {
         StaticClassForTesting.method2("param");
     }
 
-    @Test
+    /*@Test
     public void testStaticVerifyMethodParamAny() {
         PowerMockito.mockStatic(StaticClassForTesting.class);
         Mockito.when(StaticClassForTesting.method2(any())).thenReturn("Test1");
@@ -60,7 +59,7 @@ public class StaticExamples {
 
         PowerMockito.verifyStatic();
         StaticClassForTesting.method2(any());
-    }
+    }*/
 
     @Test
     public void testStaticVerifyMethodParamAnyString() {

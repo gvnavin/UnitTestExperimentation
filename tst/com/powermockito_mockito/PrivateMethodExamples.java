@@ -17,7 +17,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 public class PrivateMethodExamples {
 
     @Test
-    public void testPrivateMethod() throws Exception {
+    public void testPrivateMethodViaPublicMethod() throws Exception {
         final ClassWithPrivateMethod actualClassWithPrivateMethod = new ClassWithPrivateMethod();
         final ClassWithPrivateMethod mockedClassWithPrivateMethod = PowerMockito.spy(actualClassWithPrivateMethod);
 

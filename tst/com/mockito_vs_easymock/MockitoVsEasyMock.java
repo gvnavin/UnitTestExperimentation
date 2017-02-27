@@ -31,6 +31,7 @@ public class MockitoVsEasyMock {
 
         Assert.assertEquals("one", easyMocklist.get(0));
         Assert.assertEquals("two", easyMocklist.get(1));
+        easyMocklist.clear();
 
         EasyMock.verify(easyMocklist);
 
@@ -43,6 +44,8 @@ public class MockitoVsEasyMock {
 
         Assert.assertEquals("one", mockitoMockList.get(0));
         Assert.assertEquals("two", mockitoMockList.get(1));
+
+        mockitoMockList.clear();
 
         Mockito.verify(mockitoMockList).clear();
     }

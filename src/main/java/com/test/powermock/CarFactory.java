@@ -6,6 +6,9 @@ package com.test.powermock;
 public class CarFactory {
 
     public Car constructCar(String type, String color) {
-        return new Car(type, color);
+        final Car car = new Car(type, color);
+        final String print = car.getName();
+        System.out.println("getName = " + print);
+        return car;
     }
 }

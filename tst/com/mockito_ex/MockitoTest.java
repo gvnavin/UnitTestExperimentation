@@ -1,6 +1,5 @@
 package com.mockito_ex;
 
-import com.test.mockito.ArticleManager;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Matchers;
 import org.mockito.Mockito;
@@ -16,7 +15,6 @@ import java.util.List;
 import static org.hamcrest.CoreMatchers.isA;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsCollectionContaining.hasItem;
-
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.atLeast;
 import static org.mockito.Mockito.atLeastOnce;
@@ -51,7 +49,7 @@ public class MockitoTest {
     }
 
     // Demonstrates the return of multiple values
-    public static void testMoreThanOneReturnValue() {
+    public static void testMoreThanOneTimeReturnValue() {
         final Iterator i = mock(Iterator.class);
         when(i.next()).thenReturn("Mockito").thenReturn("rocks");
         String result = i.next() + " " + i.next();
