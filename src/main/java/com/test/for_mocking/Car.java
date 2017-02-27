@@ -1,4 +1,4 @@
-package com.test.powermock;
+package com.test.for_mocking;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

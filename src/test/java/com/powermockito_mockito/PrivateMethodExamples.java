@@ -1,6 +1,6 @@
 package com.powermockito_mockito;
 
-import com.test.powermock.ClassWithPrivateMethod;
+import com.test.for_mocking.ClassWithPrivateMethod;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

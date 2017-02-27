@@ -1,6 +1,6 @@
 package com.jmockit_ex;
 
-import com.test.powermock.FinalClass;
+import com.test.for_mocking.FinalClass;
 import mockit.Expectations;
 import mockit.FullVerifications;
 import mockit.Mocked;

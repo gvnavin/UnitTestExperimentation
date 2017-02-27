@@ -1,6 +1,6 @@
 package com.powermock_easymock;
 
-import com.test.powermock.StaticClassForTesting;
+import com.test.for_mocking.StaticClassForTesting;
 import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;

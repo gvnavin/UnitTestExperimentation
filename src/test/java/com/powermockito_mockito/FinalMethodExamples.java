@@ -1,6 +1,6 @@
 package com.powermockito_mockito;
 
-import com.test.powermock.ClassWithFinalMethod;
+import com.test.for_mocking.ClassWithFinalMethod;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

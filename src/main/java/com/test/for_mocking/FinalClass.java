@@ -1,4 +1,4 @@
-package com.test.powermock;
+package com.test.for_mocking;
 
 /**
  * Created by gnavin on 2/26/17.

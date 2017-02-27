@@ -1,7 +1,7 @@
 package com.jmockit_ex;
 
-import com.test.powermock.ClassWithPrivateMethod;
-import com.test.powermock.StaticClassForTesting;
+import com.test.for_mocking.ClassWithPrivateMethod;
+import com.test.for_mocking.StaticClassForTesting;
 import mockit.Deencapsulation;
 import mockit.Expectations;
 import mockit.FullVerifications;
@@ -49,7 +49,7 @@ public class PrivateMethodExamples {
     @Test
     public void testPrivateMethod() {
         final ClassWithPrivateMethod testedClassWithPrivateMethod = new ClassWithPrivateMethod();
-        //call and invoke private method and test directly
+        //call and invoke private method and com.test directly
         final String privateMethod = Deencapsulation.invoke(testedClassWithPrivateMethod, "privateMethod");
         System.out.println("privateMethod = " + privateMethod);
         Assert.assertEquals("privateMethod", privateMethod);

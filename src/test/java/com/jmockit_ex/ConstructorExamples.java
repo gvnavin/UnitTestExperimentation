@@ -1,8 +1,8 @@
 package com.jmockit_ex;
 
-import com.test.powermock.Car;
-import com.test.powermock.CarFactory;
-import com.test.powermock.StaticClassForTesting;
+import com.test.for_mocking.Car;
+import com.test.for_mocking.CarFactory;
+import com.test.for_mocking.StaticClassForTesting;
 import mockit.Expectations;
 import mockit.FullVerifications;
 import mockit.Mock;

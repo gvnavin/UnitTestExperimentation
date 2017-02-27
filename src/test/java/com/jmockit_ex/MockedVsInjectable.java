@@ -36,5 +36,4 @@ public class MockedVsInjectable {
         Assert.assertEquals("dev_leader", aLeader.getName());
     }
 
-
 }

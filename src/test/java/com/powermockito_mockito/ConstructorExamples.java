@@ -1,7 +1,7 @@
 package com.powermockito_mockito;
 
-import com.test.powermock.Car;
-import com.test.powermock.CarFactory;
+import com.test.for_mocking.Car;
+import com.test.for_mocking.CarFactory;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

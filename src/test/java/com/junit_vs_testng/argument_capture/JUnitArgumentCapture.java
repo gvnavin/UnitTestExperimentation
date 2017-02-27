@@ -3,16 +3,19 @@ package com.junit_vs_testng.argument_capture;
 import com.mockito_ex.MockitoTest;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
+import org.powermock.modules.junit4.PowerMockRunner;
 
 import java.util.List;
 
 /**
  * Created by gnavin on 2/26/17.
  */
+@RunWith(PowerMockRunner.class)
 public class JUnitArgumentCapture {
 
     //Without this rule captor will throw null pointer exception

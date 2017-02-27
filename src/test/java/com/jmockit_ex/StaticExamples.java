@@ -1,6 +1,6 @@
 package com.jmockit_ex;
 
-import com.test.powermock.StaticClassForTesting;
+import com.test.for_mocking.StaticClassForTesting;
 import mockit.Expectations;
 import mockit.FullVerifications;
 import mockit.Mocked;
@@ -80,7 +80,7 @@ public class StaticExamples {
             result = "Test1";
         }};
 
-        Assert.assertEquals("Test1", StaticClassForTesting.method2(anyString()));
+        Assert.assertEquals("Test1", StaticClassForTesting.method2(""));
 
         // verify mocked call
         new FullVerifications(StaticClassForTesting.class) {
@@ -97,7 +97,7 @@ public class StaticExamples {
         }};
 
         System.out.println("StaticClassForTesting.method2() : " + StaticClassForTesting.method2(""));
-        Assert.assertEquals("Test", StaticClassForTesting.method2(anyString()));
+        Assert.assertEquals("Test", StaticClassForTesting.method2(""));
 
         // verify mocked call
         new FullVerifications(StaticClassForTesting.class) {
